@@ -1,0 +1,28 @@
+<section id="skills" class="py-20 bg-gradient-to-b from-background to-secondary/10">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Skills & Certifications</h2>
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-8 glass-effect animate-fadeIn">
+        <h3 class="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-200">Top Skills</h3>
+        <div class="flex flex-wrap gap-3">
+          @for (skill of skills; track skill) {
+            <span class="skill-badge hover-scale">
+              {{ skill }}
+            </span>
+          }
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 glass-effect animate-fadeIn">
+        <h3 class="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-200">Certifications</h3>
+        <div class="flex flex-wrap gap-3">
+          @for (cert of certifications; track cert) {
+            <span class="skill-badge bg-accent/10 text-accent hover:bg-accent/20">
+              {{ cert }}
+            </span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

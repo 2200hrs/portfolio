@@ -1,0 +1,17 @@
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+    <div class="max-w-3xl mx-auto">
+      <p class="text-lg text-gray-700 mb-8">{{ summary }}</p>
+
+      <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <h3 class="text-xl font-semibold mb-4">Honors & Awards</h3>
+        <ul class="list-disc list-inside space-y-2">
+          @for (award of awards; track award) {
+            <li class="text-gray-700">{{ award }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

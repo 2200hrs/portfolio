@@ -1,0 +1,49 @@
+<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 relative overflow-hidden">
+  <!-- Animated background grid -->
+  <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+
+  <!-- Video Background -->
+  <div class="absolute inset-0 w-full h-full overflow-hidden">
+    <video
+      class="absolute top-0 left-0 w-full h-full object-cover opacity-20"
+      autoplay
+      loop
+      muted
+      playsinline
+    >
+      <source src="assets/legend.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- 3D Character Container -->
+  <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[80vh] flex items-center justify-center animate-float">
+    <div class="relative w-full h-full">
+      <!-- You can replace this with your actual 3D model or video -->
+      <div class="absolute inset-0 bg-[url('assets/image.png')] bg-contain bg-no-repeat bg-center animate-pulse" style="background-size: 100% auto;"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="max-w-2xl animate-fadeIn">
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+          Award-Winning Academic | Sales & Marketing Strategist | Digital Marketing Expert
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300">
+          Harare, Zimbabwe
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="btn-primary">
+            Contact Me
+          </a>
+          <a href="/assets/cv.pdf" download class="btn-secondary">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gradient overlay at the bottom -->
+  <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent"></div>
+</section>
